@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Amaretto Bakery</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../css/cliente.css">
+    <script src='../json/cliente.js' defer></script>
+    <link rel="icon" href="../img/icono.png">
+</head>
+<body>
+
+    <form method="post" action="/submit_cliente">
+        <div class="contenedor">
+            <div class="formulario">
+                <div class="contener-formulario">
+                    <div class="titulo">
+                        <h1>Gestion de Clientes</h1>
+                    </div>
+                    <div class="contenedor-text-input">
+                        <div class="registro">
+                            <label for="ruc">RUC :</label>
+                            <input type="text" id="ruc" name="ruc" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" id="nombres" name="nombres" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="apellido-paterno">Apellido Paterno:</label>
+                            <input type="text" id="apellido-paterno" name="apellido-paterno" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="apellido-materno">Apellido Materno:</label>
+                            <input type="text" id="apellido-materno" name="apellido-materno" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="celular">Celular:</label>
+                            <input type="text" id="celular" name="celular" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="distrito">Distrito:</label>
+                            <input type="text" id="distrito" name="distrito" class="redondeadonorelieve">
+                        </div>
+
+                        <div class="registro">
+                            <label for="fecha-hora-registro">Fecha/Hora de Registro:</label>
+                            <input type="datetime-local" id="fecha-hora-registro" name="fecha-hora-registro" class="redondeadonorelieve">
+                        </div>
+                    </div>
+                </div>
+                <div class="contener-botones">
+                    <div class="botones">
+                        <input type="submit" value="Guardar">
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Modificar">
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Eliminar">
+                    </div>
+                    <div class="botones">
+                        <input type="submit" value="Cancelar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="tabla-container">
+        <div class="tabla">
+            <div class="fila encabezado">
+                <div class="tabla-scroll">
+                 <div class="columna columna-1" style="display: inline-block;">
+                    <h4>RUC</h4>
+                 </div>
+                 <div class="columna columna-2"style="display: inline-block;">
+                    <h4>Nombres</h4>
+                 </div>
+                 <div class="columna columna-3"style="display: inline-block;">
+                    <h4>Apellido Paterno</h4>
+                 </div>
+                 <div class="columna columna-4"style="display: inline-block;" >
+                    <h4>Apellido Materno</h4>
+                 </div>
+                 <div class="columna columna-5"style="display: inline-block;">
+                    <h4>Celular</h4>
+                 </div>
+                 <div class="columna columna-6"style="display: inline-block;">
+                    <h4>Distrito</h4>
+                 </div>
+                 <div class="columna columna-7"style="display: inline-block;">
+                    <h4>Fecha/Hora</h4>
+                 </div>
+                 <div class="contenedor-filas" id="contenedor-filas"></div>
+                 </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
